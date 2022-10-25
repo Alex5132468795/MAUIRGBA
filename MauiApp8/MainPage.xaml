@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp8.MainPage"
+             BackgroundColor="White">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+        VerticalOptions="Center">
+        <Ellipse x:Name="Pic" WidthRequest="100" HeightRequest="100" Fill="RGB(100, 100, 100)"></Ellipse>
+        <Stepper x:Name="RStep"  Value="100" ValueChanged="ValueChangedR" Minimum="0" Maximum="255" Increment="1"  BackgroundColor="Red"></Stepper>
+        <Slider x:Name="RSlid" Minimum="0" Maximum="255" Value="100" ValueChanged="ValueChangedR" MinimumTrackColor="DarkRed" MaximumTrackColor="Red"></Slider>
+        <Stepper x:Name="YStep" Minimum="0" Maximum="255" Increment="1" Value="100" ValueChanged="ValueChangedY" BackgroundColor="Yellow"></Stepper>
+        <Slider x:Name="YSlid" Minimum="0" Maximum="255" Value="100"  MinimumTrackColor="Yellow" MaximumTrackColor="LightYellow"></Slider>
+        <Stepper x:Name="BStep" Minimum="0" Maximum="255" Increment="1" Value="100" ValueChanged="ValueChangedB" BackgroundColor="Blue"></Stepper>
+        <Slider x:Name="BSlid" Minimum="0" Maximum="255" Value="100"  MinimumTrackColor="DarkBlue" MaximumTrackColor="Blue"></Slider>
+        <CheckBox IsChecked="false" CheckedChanged="AStat" BackgroundColor="Green"></CheckBox>
+        <Stepper x:Name="AStep" Minimum="0" Maximum="255" Increment="1" Value="100" ValueChanged="ValueChangedA" BackgroundColor="Green"></Stepper>
+        <Slider x:Name="ASlid" Minimum="0" Maximum="255" Value="100"  MinimumTrackColor="DarkGreen" MaximumTrackColor="Green"></Slider>
+    </VerticalStackLayout>
+</ContentPage>
